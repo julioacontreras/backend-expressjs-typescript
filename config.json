@@ -1,0 +1,29 @@
+{
+    "basePath": "/api",
+    "port": 3000,
+    "databases": [
+        {
+            "description": "Sonora database",
+            "connection": "mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb]"
+        }
+    ],
+    "logger": {
+        "language": "en",
+        "colors": true,
+        "debug": true,
+        "info": true,
+        "warning": true,
+        "error": true,
+        "sponsor": true,
+        "write": true,
+        "type": "log",
+        "rotate": {
+            "size": "10M",
+            "encoding": "utf8"
+        },
+        "path": {
+            "debug_log": "./debug.log",
+            "error_log": "./errors.log"
+        }
+    }
+}
